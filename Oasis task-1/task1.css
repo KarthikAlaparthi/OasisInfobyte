@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://thepointsguy.global.ssl.fastly.net/us/originals/2022/07/Bora-Bora-scaled.jpg");
+    color: Black;
+    z-index: 2;
+ background-repeat: no-repeat;
+}
+.showcase.active{
+    right: 300px;
+}
+.showcase header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu{
+    padding-left: 700px;
+    font-weight: 500;
+}
+ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+ul li a{
+    padding: 8px;
+    text-decoration: none;
+    color: yellow;
+    margin-right: 0px;
+    transition: 0.5 ease;
+}
+ul li a:hover{
+    padding: 10px;
+    background-color:black;
+    color:red;
+    border-radius: 10px;
+    transform: scale(0.5);
+}
+.toggle{
+    position:relative;
+    width:60px;
+    height: 60px;
+    background: url('circle\ menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    filter:invert(1);
+    
+}
+
+.toggle.active{
+    display: block;
+    width: 100%;
+    background: url('close.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.text{
+    position:absolute;
+    z-index: 10;
+}
+.text h2{
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text h3{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    color:black
+}
+
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 600px;
+ }
+ .media-icons a{
+    position: relative;
+    color: aliceblue;
+    font-size: 25px;
+    transition: 0.15s;
+    
+ }
+ .media-icons a:not(:last-child){
+    margin-right: 60px;
+ }
+ .media-icons a:hover{
+    transform: scale(1.5);
+ }
+ .fa-youtube {
+    color: rgb(255, 0, 0);
+  }
+  .fa-twitter{
+    color: green;
+  }
+  .fa-facebook-f{
+    color: rgba(94, 12, 226, 0.767);
+  }
